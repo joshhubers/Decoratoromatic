@@ -1,0 +1,22 @@
+using System;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace TestNamespace
+{
+  public class Foo
+  {
+    public Guid Id { get; set; }
+
+    public int? FooA { get; set; }
+
+    public string FooB { get; set; }
+
+    public string FooC { get; set; }
+
+    public Bar BarA { get; set; }
+
+    public List<Bar> BarB { get; set; }
+  }
+}
