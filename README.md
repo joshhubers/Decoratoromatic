@@ -119,6 +119,7 @@ I wrote this quick and dirty, and will break under many conditions.
 It also only copies the constructor and properties for now.
 
 ## When I'm bored
-- Copy methods
-- Handle multiple classes in one file
+- Copy methods.
+- Handle multiple classes in one file.
 - Using native ```CodeAnalysis``` objects to create a new SyntaxTree of the new decorator, rather than writing raw strings.
+- Handle properties only having a get or a set.

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.IO;
 
 namespace Decoratoromatic
@@ -11,7 +12,8 @@ namespace Decoratoromatic
 
           string sourceFile = args[0];
           string destinationFile = args[1];
-          string decoratorClassName = destinationFile.Split(".")[0];
+          string filename = destinationFile.Split('/').Last();
+          string decoratorClassName = filename.Split('.')[0];
 
           string rawText = ReadCSharpFile(sourceFile);
 
